@@ -6,15 +6,15 @@ import java.util.Scanner;
 
 public class Menu {
 
-    Scanner s;
-    Operaciones operaciones;
-    BigInteger opcion;
-    BigInteger dos;
-    BigInteger tres;
-    BigInteger cuatro;
-    BigInteger cinco;
+    private Scanner s;
+    private Operaciones operaciones;
+    private BigInteger opcion;
+    private BigInteger dos;
+    private BigInteger tres;
+    private BigInteger cuatro;
+    private BigInteger cinco;
 
-    Menu() {
+    public Menu() {
         System.out.println("constructor de menu");
         s = new Scanner(System.in);
         operaciones = new Operaciones();
@@ -25,7 +25,7 @@ public class Menu {
 
     }
 
-    void menu() {
+    public void menu() {
 
         System.out.println("Escoja:\n 1|suma\n 2|resta\n 3|multiplicaion\n 4|divicion\n 5|modulo o residuo");
         opcion = s.nextBigInteger();
